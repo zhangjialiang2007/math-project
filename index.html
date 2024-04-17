@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+</head>
+
+<body>
+    <script type="module">
+        // import { optimizationMethod } from "./optimizationMethod.js"
+        // let f = (x) => {
+        //     let ret = x * x - 6 * x + 2
+        //     return ret;
+        // }
+        // let result = optimizationMethod(0, 10, f, 0.0001);
+        // console.log("result:", result); 
+        
+        
+        import { ahpMethod } from "./ahpMethod.js"
+        let mat = [[1,3,4,5,1],[1/3,1,2,4,1/4],[1/4,1/2,1,3,1/7],[1/5,1/4,1/3,1,1/5],[1,4,7,5,1]]
+        // let mat = [[1,2,5],[1/2,1,2],[1/5,1/2,1]]
+        // let mat = [[1,2,6],[1/2,1,4],[1/6,1/4,1]]
+        let ret = ahpMethod(mat, mat.length);
+        console.log(ret);
+
+    </script>
+</body>
+
+
+</html>
